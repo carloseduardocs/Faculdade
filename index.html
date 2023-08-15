@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Atividade 2 - Formulário</h1>
+
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    <br>
+    <div class="nome">
+      <label for="Name">Nome:</label>
+      <input id="name" type="text">
+    </div>
+    <br>
+    <div class="DN">
+      <label for="Data de Nascimento">Data de Nascimento:</label>
+      <input id="date" type="date">
+    </div>
+    <br>
+
+    <div class="sexo">
+
+      <form>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" id="fem"> Feminino
+        <input type="radio" name="sexo" id="masc"> Masculino
+        <input type="radio" name="sexo" id="nbin"> Não binário
+      </form>
+
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Dados Gerais</legend>
+    <br>
+    <div class="satisfacao">
+      <label for="satisfacao">Satisfação:</label>
+      <label for="insatisfeito">Insatisfeito</label>
+      <input type="range" min="1" max="5">
+      <label for="satisfeito">Muito Satisfeito</label>
+    </div>
+
+    <br>
+
+    <div class="foto">
+      <label for="foto">Foto de perfil:</label>
+      <input type="file" name="file" id="file">
+    </div>
+    <br>
+
+    <form>
+      <label>Preferência musical:</label>
+
+      <input type="checkbox" name="fav" id="Rock">Rock
+      <input type="checkbox" name="fav" id="POP">POP
+      <input type="checkbox" name="fav" id="Eletrônica">Eletrônica
+      <input type="checkbox" name="fav" id="Sertanejo">Sertanejo
+    </form>
+
+    <br>
+    <label>Comentário:</label>
+    <br>
+    <textarea name="" id="" cols="100" rows="10"></textarea>
+
+  </fieldset>
+  <br>
+  <button type="submit">Enviar</button>
+
+</body>
+
+</html>
